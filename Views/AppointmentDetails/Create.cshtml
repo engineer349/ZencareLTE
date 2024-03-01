@@ -1,0 +1,71 @@
+﻿@page
+@model ZencareLTE.Views.AppointmentDetails.CreateModel
+
+
+<form id="appointmentcreation" method="post">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="DoctorName">DoctorName</label>
+      <input type="email" class="form-control" placeholder="DoctorName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="PatientName">PatientName</label>
+      <input type="text" class="form-control" id="patientname" placeholder="PatientName">
+    </div>
+  </div>
+  <div class="form-row">
+       <div class="form-group col-md-2">
+            <label for="">Age</label>
+            <input type="text" class="form-control" id="Age" placeholder="Age">
+        </div>
+    <div class="form-group col-md-2">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" class="form-control">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="NottoSay">Not to Say</option> 
+        </select>
+    </div>
+    <div class="form-group col-md-2">
+    <label for="ContactNo">ContactNo</label>
+    <input type="text" class="form-control" id="ContactNo" placeholder="ContactNo">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="patientaddress">PatientAddress</label>
+      <input type="text" class="form-control" id="patientaddress">
+    </div>
+   </div>
+   <div  class="form-row">
+       <div class="form-group col-md-6">
+      <label for="patientdisease">PatientDisease</label>
+      <input type="date" class="form-control" id="patientdisease">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="reasontype">ReasonType</label>
+      <input type="text" class="form-control" id="reasontype">
+    </div>
+  </div>
+   <div  class="form-row">
+       <div class="form-group col-md-6">
+      <label for="appointmentdate">AppointmentDate</label>
+      <input type="date" class="form-control" id="appointmentdate">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="appointmenttime">AppointmentTime</label>
+      <input type="time" class="form-control" id="appointmenttime">
+    </div>
+       
+   </div>
+  
+  <button type="submit" class="btn btn-primary" onclick="Save()">Submit</button>
+  <script>
+  
+  function Save()
+  {
+      //alert("Your AppointmentDetails are saving");
+
+      Response.redirect(https://localhost:7142/Home/Privacy);
+  }
+  </script>
+ 
+</form>

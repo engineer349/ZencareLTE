@@ -1,0 +1,51 @@
+﻿@page
+@model ZencareLTE.Areas.Identity.Pages.PrescriptionDetails.CreateModel
+<html>
+<head>
+</head>
+<body> 
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="patientname">PatientName</label>
+      <input type="text" class="form-control" id ="patientname" placeholder="PatientName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastname">LastName</label>
+      <input type="text" class="form-control" id="lastname" placeholder="LastName">
+    </div>
+  </div>
+  <div class="form-row"> 
+    <div class="form-group col-md-3">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id ="age" placeholder="Age">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="phoneno">ContactNo</label>
+      <input type="tel" class="form-control" id="phoneno" placeholder="ContactNo">
+    </div>
+        <div class="form-group col-md-6">
+      <label for="patientdisease">Patient Disease</label>
+      <input type="text" class="form-control" id="patientdisease" placeholder="PatientDisease">
+    </div>
+</div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="patientdiagnosis">PatientDiagnosis</label>
+      <input type="text" class="form-control" id="patientdiagnosis">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="patientdetails" class="form-label">PatientDetails</label>
+        <input class="form-control" type="file" id="patientdetails" multiple />
+    </div>
+  </div>
+ <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="prescriptiondetails">Prescription Details</label>
+      <input type="" class="form-control" id="prescriptiondetails">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>

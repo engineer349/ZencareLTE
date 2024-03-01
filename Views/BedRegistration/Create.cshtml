@@ -1,0 +1,44 @@
+﻿@page
+@model ZencareLTE.Views.BedRegistration.CreateModel
+
+<form>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="patientname">PatientName</label>
+      <input type="text" class="form-control" id="patientname" placeholder="PatientName">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="bedtype">Bedtype</label>
+        <select name="bedtype" id="bedtype" class="form-control">
+          <option value="single">Single</option>
+          <option value="doubleshared">Doubleshared</option>
+          <option value="singelnon-ac">Single Non-AC</option> 
+        </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="roomtype">RoomType</label>
+        <select name="roomtype" id="roomtype" class="form-control">
+          <option value="general">General</option>
+          <option value="icu">ICU</option>
+          <option value="Isolated ventilator">IsolatedVentilator </option> 
+        </select>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="bedrequireddate">BedRequiredDate</label>
+       <input type="date" id="bedrequireddate" class="form-control"/>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="reasontype">ReasonType</label>
+       <input type="text" id="reasontype" class="form-control"/>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+
